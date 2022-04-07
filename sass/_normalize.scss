@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $fontFamily;
+}
+
+h2,
+h3 {
+  color: $header;
+  text-transform: capitalize;
+}
