@@ -2,7 +2,7 @@
   $direction: row,
   $justifyContent: center,
   $alignItems: center,
-  $wrap: no-wrap,
+  $wrap: nowrap,
   $rowGap: 0,
   $columnGap: 0
 ) {
@@ -12,4 +12,28 @@
   flex-flow: $direction $wrap;
   row-gap: $rowGap;
   column-gap: $columnGap;
+}
+
+@mixin borderBox(
+  $borderWidth: 1px,
+  $borderStyle: solid,
+  $borderColor: gray,
+  $borderRadius: 0
+) {
+  border-width: $borderWidth;
+  border-style: $borderStyle;
+  border-color: $borderColor;
+  border-radius: $borderRadius;
+}
+
+@mixin bgPic(
+  $background,
+  $bgPosition: center,
+  $bgSize: contain,
+  $bgReapeat: no-repeat
+) {
+  background: url($background);
+  background-position: $bgPosition;
+  background-size: $bgSize;
+  background-repeat: $bgReapeat;
 }

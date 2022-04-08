@@ -17,3 +17,11 @@ h3 {
   color: $header;
   text-transform: capitalize;
 }
+h2 {
+  width: 100%;
+  text-transform: capitalize;
+  color: $bgColorLightBlue;
+  border-bottom: 3px solid $bgColorLightBlue;
+  font-size: 32px;
+  font-weight: 600;
+}
